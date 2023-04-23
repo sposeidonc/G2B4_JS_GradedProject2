@@ -1,5 +1,7 @@
+
 const loginForm = document.querySelector('.loginForm');
 
+// Check for the username and password with the credentials provided
 
 loginForm.addEventListener('submit', function(e) {
   e.preventDefault(); 
@@ -13,6 +15,9 @@ loginForm.addEventListener('submit', function(e) {
         alert("Invalid username/password.")
     }
 });
+
+// The function to validate credentials
+
 function validateLogin(username,password) {
     const validUsername = localStorage.getItem('username');
     const validPassword = localStorage.getItem('password');
@@ -23,6 +28,9 @@ function validateLogin(username,password) {
       return false;
     }
 }
+
+// To prevent the browser to be able to go back to the login page
+
 document.addEventListener('DOMContentLoaded', function() {
   history.pushState(null, null, document.URL);
   window.addEventListener('popstate', function() {

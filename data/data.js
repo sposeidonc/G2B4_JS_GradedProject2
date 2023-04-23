@@ -1,3 +1,5 @@
+// The JSON file data as a JS object
+
 const data =
 {
 	"resume" : 

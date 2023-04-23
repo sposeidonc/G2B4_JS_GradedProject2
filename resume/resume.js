@@ -4,17 +4,18 @@ let currentIndex = 0;
 let filteredResume = [];
 let allResumes = data.resume;
 
-
+// Loading the first json data fby calling loadResume function
 window.onload = function () {
   console.log("Page and all resources loaded!");
   loadResume(currentIndex);
 }
+// Function to load the resume onto page after checking the isButtonVisible loadData function
 function loadResume(currentIndex) {
   isButtonVisible(allResumes);
   resumeData = allResumes[currentIndex];
   loadData(resumeData);
-
 }
+// Function to check if it is the first or last resume or if there are no resumes in the backend
 function isButtonVisible(allResumes) {
   const nextButton = document.getElementById('nextButton');
   const prevButton = document.getElementById('prevButton');
@@ -35,6 +36,7 @@ function isButtonVisible(allResumes) {
     prevButton.style.visibility = "visible";
   }
 }
+// Function to load the data into the resume by passing the data.
 function loadData(data) {
   console.log("Loading for resume " + data);
   document.getElementById("name").innerText = data['basics']['name'];
@@ -70,17 +72,21 @@ function loadData(data) {
   }
 
 }
+// The functionality for the next button
 nextButton.addEventListener('click', function () {
   console.log('Next Button Clicked');
   currentIndex++;
   loadResume(currentIndex);
 });
+
+// The functionality for the previous button
 prevButton.addEventListener('click', function () {
   console.log('Pevious Button Clicked');
   currentIndex--;
   loadResume(currentIndex);
 });
 
+// The functionality for the search button
 const searchInput = document.querySelector('#searchBox');
 searchInput.addEventListener('keyup', function (event) {
   if (event.key === 'Enter') {
