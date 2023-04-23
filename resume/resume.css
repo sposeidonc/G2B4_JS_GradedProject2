@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.searchBox {
+    margin: 35px;
+    text-align: center;
+}
+
+.searchBox input {
+    height: 35px;
+    width: 35%;
+    border: solid 2px black;
+}
+
+.searchBox button {
+    height: 35px;
+    width: 85px;
+    margin: 0 5%;
+}
+.errorDialog{
+    min-height: 25%;
+    min-width: 50%;
+    border: solid 2px black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.errorMsg{
+    font-size: 25px;
+    float: right;
+    padding: 5%;
+    padding: 50px 120px;
+
+}
+.erroricon{
+    width: 130px;
+    height: 130px;
+    padding: 20px;
+}
+
+.resume {
+    margin: 35px;
+    border: solid 1px black;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    min-height: 600px;
+
+}
+
+.content {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.header {
+    background-color: #CCFFFF;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.heading{
+    width: 75%;
+    display: inline-block;
+}
+.heading h1{
+    font-size: 50px;
+    padding: 30px;
+}
+.icon{
+    width: 130px;
+    height: 130px;
+}
+
+.left {
+    background-color: MistyRose;
+    padding: 10px;
+    min-width: 20%;
+    min-height: 250px;
+    margin-right: 10px;
+    float: left;
+    font-size: 13px;
+}
+
+.left h3 {
+    color: black;
+    font-weight: bold;
+    background-color: darkgray;
+    padding: 2px;
+}
+
+.left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left ul li {
+    margin: 0;
+}
+
+.right {
+    margin-left: 22%;
+}
+
+
+.subheading {
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul,p{
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 5px;
+}
+.education ul,#achievement{
+    list-style-type: disc;
+}

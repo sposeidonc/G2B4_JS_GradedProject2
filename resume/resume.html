@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="resume.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="searchBox">
+            <button id="prevButton">Previous</button>
+            <input type="search" id="searchBox" placeholder="search for keywords to filter the resume">
+            <button id="nextButton">Next</button>
+        </div>
+        <div class="errorDialog" style="display: none;">
+            <p class="errorMsg">No such results found</p>
+            <img src="../images/sad.png" alt="erroricon" class="erroricon">
+        </div>
+        <div class="resume">
+            <div class="header">
+                <div class="heading">
+                    <h1 id="name">Name</h1>
+                    <h2 id="job">Applied For : </h2>
+                </div>
+                <img src="../images/personIcon.png" alt="Icon" class="icon">
+            </div>
+            <div class="content">
+                <section class="left">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li id="phone">Phone number</li>
+                        <li id="email">Email</li>
+                        <li id="linkedln"><a href="#">LinkedLn</a></li>
+                    </ul>
+
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li class="skill">1</li>
+                        <li class="skill">2</li>
+                        <li class="skill">3</li>
+                    </ul>
+
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li class="hobbie">1</li>
+                        <li class="hobbie">2</li>
+                        <li class="hobbie">3</li>
+                    </ul>
+                </section>
+                <section class="right">
+                    <div class="subheading">Work Experience</div>
+                    <div class="workExperience">
+                        <ul>
+                            <li id="company"><b>Company Name : </b>company</li>
+                            <li id="position"><b>Position : </b>position</li>
+                            <li id="sdate"><b> Start date: </b>date</li>
+                            <li id="edate"><b>End date : </b>date</li>
+                            <li id="summary"><b>Summary : </b><summary></summary></li>
+                        </ul>
+                    </div>
+                    <div class="subheading">Projects</div>
+                    <p id="project"></p>
+                    <div class="subheading">Education & Internship</div>
+                    <div class="education">
+                        <ul>
+                            <li id="ug"><b>UG : </b></li>
+                            <li id="pu"><b>PU : </b></li>
+                            <li id="highSchool"><b>High School : </b></li>
+                        </ul>
+                    </div>
+                    <div class="subheading">Achievements</div>
+                    <ul id="achievement">
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../data/data.js"></script>
+    <script src="resume.js"></script>
+   
+    
+</body>
+
+</html>
