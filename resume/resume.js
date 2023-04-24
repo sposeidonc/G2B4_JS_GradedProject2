@@ -86,7 +86,7 @@ prevButton.addEventListener('click', function () {
   loadResume(currentIndex);
 });
 
-// The functionality for the search button
+// The implementation of the search functionality
 const searchInput = document.querySelector('#searchBox');
 searchInput.addEventListener('keyup', function (event) {
   if (event.key === 'Enter') {
